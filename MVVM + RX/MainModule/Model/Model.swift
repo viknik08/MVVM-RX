@@ -6,8 +6,6 @@
 //
 
 import Foundation
-//import RxSwift
-//import RxCocoa
 
 enum ViewData {
     case initial

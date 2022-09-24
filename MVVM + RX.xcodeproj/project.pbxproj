@@ -14,7 +14,6 @@
 		BEE09CDB28D48D9D00541A7C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE09CDA28D48D9D00541A7C /* TestView.swift */; };
 		BEE09CDD28D48DB000541A7C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE09CDC28D48DB000541A7C /* MainViewModel.swift */; };
 		BEE09CDF28D48DBC00541A7C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE09CDE28D48DBC00541A7C /* Model.swift */; };
-		BEE09CE428D4926E00541A7C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BEE09CE328D4926E00541A7C /* RxCocoa */; };
 		BEE09CE828D4926E00541A7C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BEE09CE728D4926E00541A7C /* RxSwift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE09CE428D4926E00541A7C /* RxCocoa in Frameworks */,
 				BEE09CE828D4926E00541A7C /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +129,6 @@
 			);
 			name = "MVVM + RX";
 			packageProductDependencies = (
-				BEE09CE328D4926E00541A7C /* RxCocoa */,
 				BEE09CE728D4926E00541A7C /* RxSwift */,
 			);
 			productName = "MVVM + RX";
@@ -407,11 +404,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BEE09CE328D4926E00541A7C /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BEE09CE028D4926E00541A7C /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
 		BEE09CE728D4926E00541A7C /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BEE09CE028D4926E00541A7C /* XCRemoteSwiftPackageReference "RxSwift" */;

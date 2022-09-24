@@ -7,7 +7,6 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
 
 class MainViewController: UIViewController {
 
@@ -24,6 +23,12 @@ class MainViewController: UIViewController {
         updateView()
     }
     
+    private func updateView() {
+        viewModel.updateViewDataRx.asObserver().subscribe { [weak self] viewData in
+            self?.testView.viewData = viewData
+        }.disposed(by: bag)
+    }
+    
     private func creatView() {
         testView = TestView()
         testView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -31,12 +36,6 @@ class MainViewController: UIViewController {
         view.addSubview(testView)
     }
 
-    private func updateView() {
-        viewModel.updateViewDataRx.asObserver().subscribe { [weak self] viewData in
-            self?.testView.viewData = viewData
-        }.disposed(by: bag)
-    }
-    
     private func setupTargetButton() {
         testView.startButton.addTarget(self, action: #selector(startAction), for: .touchUpInside)
     }

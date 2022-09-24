@@ -110,6 +110,7 @@ class TestView: UIView {
     }
     
     private func startStopActivityIndicator(viewData: ViewData?) {
+        
         switch viewData {
 
         case .loading:
